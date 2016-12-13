@@ -72,3 +72,5 @@ new_phones.each do |p|
   puts " "
   puts "-------------------"
 end
+
+puts phone1.respond_to?("model",include_private=false)
