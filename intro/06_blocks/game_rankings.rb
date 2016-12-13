@@ -14,4 +14,20 @@ game_rankings = {
 }
 
 # Your code goes here
+avg = 0
 
+game_rankings.each do |key,value| 
+  avg += value
+end
+
+avg /= game_rankings.length 
+
+puts "The gameranking average value is #{avg}"
+
+games = game_rankings.select { |key,value| value > avg }
+
+puts "Games with score above average are:"
+
+games.each do |k,v| 
+  puts "#{k} with score: #{v}" 
+end
