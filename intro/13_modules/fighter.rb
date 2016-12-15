@@ -32,5 +32,3 @@ fighter.uppercut
 fighter.block
 fighter.riposte
 fighter.straight_kick
-
-
